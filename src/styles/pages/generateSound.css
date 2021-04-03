@@ -1,0 +1,17 @@
+#generateSoundBg {
+  background-image: url(../../images/bg7.jpg);
+}
+
+#generateSoundBg .svg-container {
+  width: 50%;
+  position: relative;
+}
+
+#generateSoundBg .svg-container .title{
+  position: absolute;
+  top:50%;
+  transform:translate(-5%, -30%);
+  text-transform: uppercase;
+  font-family:BiancoSans;
+  font-size:14px;
+}

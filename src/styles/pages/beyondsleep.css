@@ -1,0 +1,115 @@
+#beyondSleep {
+  background-image: url(../../images/bg.jpg);
+  overflow: hidden;
+}
+
+.beyondsleep {
+  height: 100%;
+  position: relative;
+}
+.beyondsleep:hover #bs-1 {
+  transform: translateX(-20%);
+  transition: transform 0.9s ease;
+}
+.beyondsleep:hover #bs-2 {
+  transform: translateY(20%) scale(0.8);
+  transition: transform 0.9s ease;
+}
+.beyondsleep:hover #bs-3 {
+  transform: translate(-50%, -10%) scale(0.6);
+  transition: transform 0.9s ease;
+}
+.beyondsleep:hover #bs-4 {
+  transform: translateY(-20%) scale(0.7);
+  transition: transform 0.9s ease;
+}
+.beyondsleep:hover #bs-5 {
+  transform: translateX(20%) scale(0.7);
+  transition: transform 0.9s ease;
+}
+.options {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  padding: 1rem 0;
+  position: absolute;
+  bottom: 0;
+}
+.options div {
+  font-size: 14px;
+  font-family: BiancoSans;
+  margin: 0 4rem;
+  color: white;
+}
+.randomize {
+  height: 100%;
+}
+.element {
+  position: absolute;
+  top: 25%;
+}
+#bs-1 {
+  left: 3%;
+  top: 0%;
+  z-index: 5;
+}
+#bs-2 {
+  left: 30%;
+}
+#bs-3 {
+  left: 35%;
+  top: -20%;
+  transform: translateX(-50%) scale(0.6);
+  z-index: 0;
+}
+#bs-4 {
+  top: 5%;
+  right: 20%;
+  transform: scale(0.9);
+}
+#bs-5 {
+  right: 3%;
+  top: 7%;
+}
+.bs-svg-container .cls-1 {
+  fill: none;
+  transition: fill 0.2s ease;
+}
+.bs-svg-container .cls-1:hover {
+  fill: black;
+}
+.bs-svg-container {
+  width: 500px;
+  position: relative;
+}
+
+.bs-svg-container .bs-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  text-align: center;
+  color: white;
+}
+
+#bs-1 .bs-title {
+  transform: translate(-100%, 30%);
+}
+#bs-1 svg {
+  transform: scale(0.7);
+  z-index: 4;
+}
+.bs-svg-container .cls-1 {
+  fill: pink;
+}
+#bs-2 {
+  z-index: 5;
+}
+
+#bs-4 {
+  z-index: 2;
+}
+#bs-5 {
+  z-index: 3;
+  transform: scale(0.7);
+}

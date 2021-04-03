@@ -1,0 +1,161 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#root {
+  height: 100vh;
+}
+body {
+  height: 100vh;
+  width: 100vw;
+}
+.nav {
+  display: flex;
+  background: transparent;
+  position: fixed;
+  justify-content: space-between;
+  z-index: 1;
+  width: 100%;
+  padding: 1rem;
+}
+
+.logo {
+  width: 70px;
+}
+
+.cls-1 {
+  fill: none;
+  stroke: #ffffff;
+  stroke-miterlimit: 10;
+  stroke-width: 0.5px;
+}
+.cls-2 {
+  fill: none;
+  stroke: #ffffff;
+  stroke-miterlimit: 10;
+  stroke-width: 3px;
+}
+.cls-3 {
+  fill: none;
+  stroke: #ffffff;
+  stroke-miterlimit: 10;
+  stroke-width: 1.5px;
+}
+section {
+  padding: 1rem;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center; /* Center the image */
+  background-size: fill; /* Resize the background image to cover the entire container */
+}
+.settings {
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+}
+
+.showMenu {
+  border: 2px solid green;
+}
+#downloadBg {
+  background-image: url(../images/bg5.jpg);
+}
+
+.svg-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+}
+#landingBg .svg-container svg {
+  height: 80%;
+}
+.container {
+  display: flex;
+  height: 100%;
+  justify-content: space-between;
+}
+
+.item {
+  margin: 1.5rem;
+  width: 100%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.title {
+  /* margin-top:2rem; */
+  width: 100%;
+  text-align: center;
+}
+
+#random {
+  animation: random 1s infinite alternate ease;
+}
+#generate {
+  animation: generate 1s infinite alternate ease 0.2s;
+}
+#curated {
+  animation: curated 1s infinite alternate ease 0.4s;
+}
+
+@keyframes random {
+  0% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(5px);
+  }
+}
+@keyframes generate {
+  0% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(5px);
+  }
+}
+@keyframes curated {
+  0% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(5px);
+  }
+}
+
+.login-button {
+  background: transparent;
+  display: flex;
+  border: none;
+}
+.icon-con {
+  width: 100%;
+  max-width: 20px;
+  outline: none;
+}
+.soundToggle {
+  position: absolute;
+  bottom: 1rem;
+  right: 2rem;
+  width: 30px;
+  background: transparent;
+}
+.sound-con {
+  width: 100%;
+}
+.sound-con svg {
+  width: 100%;
+}
+.buttonText {
+  padding-left: 0.3rem;
+  font-size: 16px;
+}

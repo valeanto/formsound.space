@@ -1,0 +1,195 @@
+#curatedBg {
+  background-image: url(../../images/bg6.jpg);
+  overflow: hidden;
+}
+
+#curatedBg .container {
+  height: 100%;
+  width: 100%;
+}
+#curatedBg .item {
+  position: relative;
+}
+#curatedItem svg {
+  top: 20px;
+}
+
+#curatedBg .item svg {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 10%) scale(1.2);
+}
+#three {
+  position: absolute;
+  margin-left: 50px;
+  width: 25%;
+}
+#animOne {
+  animation: curatedAnim 1s alternate infinite;
+}
+#animTwo {
+  animation: curatedAnim 1s alternate infinite 0.2s;
+}
+#animThree {
+  animation: curatedAnim 1s alternate infinite 0.5s;
+}
+
+@keyframes curatedAnim {
+  0% {
+    top: -5px;
+  }
+  100% {
+    top: 5px;
+  }
+}
+#curatedBg .item .title {
+  position: absolute;
+  height: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  text-transform: uppercase;
+  font-size: 14px;
+  font-family: BiancoSans;
+}
+
+/* FIVE MIN */
+#fiveMinBg {
+  background-image: url(../../images/bg6.jpg);
+}
+
+#fiveMinBg .container {
+  border: 1px solid black;
+}
+
+/* SLEEP */
+
+#sleepBg {
+  background-image: url(../../images/bg6.jpg);
+  overflow: hidden;
+  background-color: rgba(0,0,0,0.5);
+}
+#sleepBg .container {
+  margin: 0 10rem;
+  display: block;
+}
+.header {
+  font-size: 35px;
+  font-family: BiancoSerif;
+  color: white;
+  width: 100%;
+}
+#sleepBg .container .content {
+  display: flex;
+  align-content: center;
+  margin: 0 8rem;
+}
+
+#sleepBg .svg-container {
+  height: 100%;
+}
+#sleepBg .container .content .svg-container {
+  display: flex;
+  transform: translateY(-40px);
+
+  flex-direction: row;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+#sleepBg .container .content svg {
+  width: 50%;
+  transform: scale(0.9);
+}
+
+/* CURATED BAR */
+.curatedBar {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.curatedBar .el .title {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-family: BiancoSans;
+}
+
+.curatedBar .el .svg-con {
+  height: 100px;
+  width: 50px;
+  margin: 0 5rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.curatedBar .el .svg-con svg {
+  max-height: 20px;
+  width: 100%;
+  margin: 0 0.1rem;
+}
+
+/* FIVE MIN */
+#fiveMinBg{
+  background-image: url(../../images/bg6.jpg);
+  overflow: hidden;
+}
+
+#fiveMinBg .container {
+  margin: 0 10rem;
+  display: block;
+}
+.header {
+  font-size: 35px;
+  font-family: BiancoSerif;
+  color: white;
+  width: 100%;
+}
+#fiveMinBg .container .content {
+  display: flex;
+  align-content: center;
+  margin: 0 8rem;
+}
+/* RELAX */
+#relaxBg{
+  background-image: url(../../images/bg6.jpg);
+  overflow: hidden;
+}
+
+#relaxBg .container {
+  margin: 0 10rem;
+  display: block;
+}
+.header {
+  font-size: 35px;
+  font-family: BiancoSerif;
+  color: white;
+  width: 100%;
+}
+#relaxBg .container .content {
+  display: flex;
+  align-content: center;
+  margin: 0 8rem;
+  position:relative;
+  width:100%;
+  height:100%;
+}
+
+.lineOne{
+  stroke:blue;
+  position:absolute;
+  bottom:0;
+}
+#relaxBg .container .content svg #Layer_3{
+  position:absolute;
+}
+#relaxBg .container .content svg #Layer_4{
+  position:absolute;
+  left:0;
+  stroke:orange;
+
+}

@@ -1,0 +1,46 @@
+#contactBg {
+  background-image: url(../../images/bg6.jpg);
+  height: 100%;
+  overflow: hidden;
+}
+.top-title {
+  font-size: 35px;
+}
+.contact-container {
+  margin: 0 6rem;
+  height: 90%;
+  position: relative;
+}
+#contactBg .svg-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  height: 100%;
+}
+#contactBg .svg-container svg {
+  transform: scale(0.9);
+}
+#contactBg .svg-container h3 {
+  position: absolute;
+  top: 5rem;
+  left: 0;
+}
+.send-container {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  width: 100px;
+}
+.send-container .caps {
+  top: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+}
+.caps {
+  font-size: 14px;
+  text-decoration: none;
+  font-family: BiancoSans;
+  color: white;
+  text-transform: uppercase;
+}

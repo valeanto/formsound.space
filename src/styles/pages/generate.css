@@ -1,0 +1,73 @@
+#generateBg {
+  background-image: url(../../images/bg2.jpg);
+  overflow: hidden;
+}
+
+.generate-container {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.generate-container .content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.slidecontainer {
+  width: 30%;
+  position: absolute;
+  right: 4rem;
+  top: 1rem;
+}
+.slider {
+  width: 100%;
+}
+
+.slidecontainer-units {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  color: white;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-family: BiancoSans;
+}
+
+.generate-container .content .svg-container {
+  height: 170px;
+  width: 16%;
+  position: relative;
+}
+.generate-container .content .svg-container:hover .cls-1 {
+  fill: rgba(0, 0, 0, 0.5);
+}
+
+.generate-container .content .svg-container .title {
+  position: absolute;
+  height: auto;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  text-transform: uppercase;
+  font-size: 12px;
+  font-family: BiancoSans;
+  padding: 0 1rem;
+}
+
+.generate-container .generateSoundButton {
+  width: 200px;
+  position: absolute;
+  bottom: 0.5rem;
+  right: 5rem;
+}
+.generate-container .generateSoundButton .title {
+  position: absolute;
+  height: auto;
+  top: 20%;
+
+  text-transform: uppercase;
+  font-size: 12px;
+  font-family: BiancoSans;
+  padding: 0 1rem;
+}

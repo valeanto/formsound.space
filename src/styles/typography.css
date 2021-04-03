@@ -1,0 +1,13 @@
+@font-face {
+  font-family: BiancoSans;
+  src: url(../fonts/BiancoSans-Regular.woff);
+}
+@font-face {
+  font-family: BiancoSerif;
+  src: url(../fonts/BiancoSerif-Regular.woff);
+}
+h3 {
+  font-family: BiancoSerif;
+  color: white;
+  font-weight: 100;
+}
