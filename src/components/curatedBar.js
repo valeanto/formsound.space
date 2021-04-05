@@ -5,7 +5,7 @@ function CuratedBar() {
   return (
     <>
       <div className="curatedBar">
-        <Link to='/' className="el">
+        <Link to='/home' className="el">
           <h3 className="title"> Exit</h3>
         </Link>
         <div className="el">

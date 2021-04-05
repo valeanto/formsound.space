@@ -1,6 +1,7 @@
 import React, { useRef, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import WelcomeTextAudio from "../../src/sounds/B_HomeSound/welcomtext_01.mp3";
+import SoundToggle from "../../src/components/soundToggle";
 
 function Landing(props) {
   let audio = useRef();
@@ -26,6 +27,9 @@ function Landing(props) {
     <>
       <section id="landingBg">
         <div className="container">
+          <Link to="/impressum" className="impressum">
+            Impressum
+          </Link>
           <div className="item">
             <Link to="/randomize" className="svg-container">
               <svg viewBox="0 0 115.87 141.24" id="random">
@@ -73,8 +77,8 @@ function Landing(props) {
             </Link>
           </div>
         </div>
-        <div className="soundToggle">
-          <button onClick={toggle}>{playing ? "Pause" : "Play"}</button>
+        <div className="soundToggle" onClick={toggle}>
+          <SoundToggle />
         </div>
       </section>
     </>

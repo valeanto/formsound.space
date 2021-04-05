@@ -1,0 +1,47 @@
+#coverBg {
+  background-image: url(../../images/bg4.jpg);
+  height: 100%;
+  color: white !important;
+  font-family: BiancoSerif !important;
+  overflow: hidden;
+}
+
+#coverBg .container {
+  position: relative;
+  top: 50px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#coverBg a {
+  color: white !important;
+}
+#coverBg h1 {
+  text-align: center;
+  font-family: BiancoSans;
+  font-size: 60px !important;
+  color: white;
+  margin-bottom: 1rem;
+}
+#coverBg .coverHeader {
+  animation: 1s subtitle infinite alternate ease-in-out;
+}
+@keyframes subtitle {
+  0% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(5px);
+  }
+}
+/* IMPRESSUM */
+.contentContainer {
+  text-align: left !important;
+  display: flex;
+  flex-direction: row;
+}
+.impressum{
+    /* border: 1px solid black; */
+    width: 100%;
+}

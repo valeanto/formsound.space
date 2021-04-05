@@ -1,3 +1,19 @@
 #landingBg {
     background-image: url(../../images/bg2.jpg);
 }
+
+#landingBg .container{
+    /* border:1px solid black; */
+    position:relative;
+}
+.impressum{
+    /* border:1px solid white; */
+    text-align: justify;
+    width:200px;
+    color:white;
+    font-size:10px;
+    font-family: BiancoSans;
+    position:absolute;
+    bottom:1rem;
+    left:0.5rem;
+}

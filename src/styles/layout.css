@@ -6,8 +6,7 @@
 
 #root {
   height: 100vh;
-  max-width:1280px;
-  border:1px solid red;
+  max-width: 1280px;
 }
 body {
   height: 100vh;
@@ -64,11 +63,20 @@ section {
 .icon-con #generateNav {
   transform: scale(1.1);
 }
+.cover {
+  border: 1px solid black;
+  margin-top: 300px;
+}
 .nav-item-con {
   display: flex;
   width: auto;
+  text-align: right;
+  justify-content: flex-end;
+  margin-bottom: 0.2rem;
 }
-
+.login-button .buttonText {
+  margin-right: 10px;
+}
 .hideMenu .nav-item-con {
   position: absolute;
   width: 30px;
@@ -139,7 +147,7 @@ section {
 }
 
 .item {
-  margin: 1.5rem;
+  margin: 0 2rem;
   width: 100%;
   align-items: center;
   display: flex;
@@ -150,11 +158,12 @@ section {
 .title {
   /* margin-top:2rem; */
   width: 100%;
+  margin-bottom: -30px;
   text-align: center;
 }
 
 #random {
-  animation: random 1s infinite alternate ease;
+  animation: random 3s infinite alternate ease;
 }
 #generate {
   animation: generate 1s infinite alternate ease 0.2s;
@@ -165,10 +174,20 @@ section {
 
 @keyframes random {
   0% {
-    transform: translateY(-10px);
+    transform: translateY(0px) translateX(0px);
+
+  }
+  25% {
+    transform: translateY(0px)  translateX(25px);
+  }
+  50% {
+    transform: translateY(5px)  translateX(50px);
+  }
+  75% {
+    transform: translateY(5px)  translateX(75);
   }
   100% {
-    transform: translateY(5px);
+    transform: translateY(10px)  translateX(100);
   }
 }
 @keyframes generate {
@@ -201,7 +220,7 @@ section {
 .soundToggle {
   position: absolute;
   bottom: 1rem;
-  right: 2rem;
+  right: 0.5rem;
   width: 30px;
   background: transparent;
 }

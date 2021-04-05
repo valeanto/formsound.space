@@ -37,6 +37,9 @@ function Login() {
 
   return (
     <div className="nav-item-con">
+      <div className="login-button" onClick={signIn}>
+        <h3 className="buttonText">Login</h3>
+      </div>
       <div className="icon-con">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 115.87 141.24">
           <g id="Layer_2" data-name="Layer 2">
@@ -48,9 +51,6 @@ function Login() {
             </g>
           </g>
         </svg>
-      </div>
-      <div className="login-button" onClick={signIn} >
-        <h3 className="buttonText">Login</h3>
       </div>
     </div>
   );

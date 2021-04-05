@@ -13,11 +13,12 @@ function Navbar() {
 
   return (
     <div className="nav">
-      <Link to="/">
-        <div className="logo">
+      <div className="logo">
+        <Link to="/home">
           <img src={logo} className="logo" />
-        </div>
-      </Link>
+        </Link>
+      </div>
+
       <div
         className={`settings ${navbarOpen ? " showMenu" : "hideMenu"}`}
         onClick={handleToggle}
@@ -26,16 +27,36 @@ function Navbar() {
         {/* <Logout /> */}
         {/* <Link to="/">login</Link> */}
         <div className="nav-item-con">
-          <div className="icon-con">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 110.57 105.08" id='generateNav'><g id="Layer_2" data-name="Layer 2"><g id="Ebene_1" data-name="Ebene 1"><path className="cls-2" d="M101.62,77.78c-10.94,15.13-26.91,25.42-52.34,26.9a42.75,42.75,0,0,1-5.66,0c-25.7-1.9-30.23-15.12-39.18-34.82A45.68,45.68,0,0,1,17.09,15.48,71.13,71.13,0,0,1,48.85,1.16a45.42,45.42,0,0,1,32,5.61,97.86,97.86,0,0,1,14,10.16A45.57,45.57,0,0,1,101.62,77.78Z"/></g></g></svg>
-          </div>
           <Link to="/members-place" className="login-button">
             <h3 className="buttonText ">Members place</h3>
           </Link>
+          <div className="icon-con">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 110.57 105.08"
+              id="generateNav"
+            >
+              <g id="Layer_2" data-name="Layer 2">
+                <g id="Ebene_1" data-name="Ebene 1">
+                  <path
+                    className="cls-2"
+                    d="M101.62,77.78c-10.94,15.13-26.91,25.42-52.34,26.9a42.75,42.75,0,0,1-5.66,0c-25.7-1.9-30.23-15.12-39.18-34.82A45.68,45.68,0,0,1,17.09,15.48,71.13,71.13,0,0,1,48.85,1.16a45.42,45.42,0,0,1,32,5.61,97.86,97.86,0,0,1,14,10.16A45.57,45.57,0,0,1,101.62,77.78Z"
+                  />
+                </g>
+              </g>
+            </svg>
+          </div>
         </div>
         <div className="nav-item-con">
+          <Link to="/contact" className="login-button">
+            <h3 className="buttonText"> Talk to us</h3>
+          </Link>
           <div className="icon-con">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 129.84 118.59" id="generateNav">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 129.84 118.59"
+              id="generateNav"
+            >
               <g id="Layer_2" data-name="Layer 2">
                 <g id="Ebene_1" data-name="Ebene 1">
                   <path
@@ -46,9 +67,6 @@ function Navbar() {
               </g>
             </svg>
           </div>
-          <Link to="/contact" className="login-button">
-            <h3 className="buttonText"> Talk to us</h3>
-          </Link>
         </div>
       </div>
     </div>

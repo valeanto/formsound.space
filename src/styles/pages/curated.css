@@ -60,9 +60,6 @@ a {
   background-image: url(../../images/bg6.jpg);
 }
 
-#fiveMinBg .container {
-  /* border: 1px solid black; */
-}
 
 /* SLEEP */
 
@@ -144,7 +141,7 @@ a {
 }
 
 .curatedBar .el .svg-con svg {
-  max-height: 40px;
+  max-height: 20px;
   width: 100%;
   margin: 0 0.1rem;
 }
@@ -156,7 +153,7 @@ a {
 }
 
 #fiveMinBg .container {
-  margin: 0 10rem;
+  /* margin: 0 10rem; */
   display: block;
 }
 .header {
@@ -165,11 +162,30 @@ a {
   color: white;
   width: 100%;
 }
+#fiveMinBg .header{
+  margin-left:8rem;
+}
 #fiveMinBg .container .content {
   display: flex;
   align-content: center;
-  margin: 0 8rem;
+  /* margin: 0 8rem; */
 }
+#fiveMinBg .container .content svg {
+  height: 100%;
+}
+#fiveMinBg .container .content svg path {
+  /* transform: matrix(0.81, -0.217, 0.259, 0.966, -663.052, -1538.736); */
+  animation: 10s infinite linear;
+}
+@keyframes path {
+  0% {
+    /* transform: matrix(0.81, -0.217, 0.259, 0.966, inherit, inherit); */
+  }
+  100% {
+    /* transform: matrix(0.81, -0.217, 0.259, 0.966, calc(inherit + 100), calc(inherit + 100px)); */
+  }
+}
+
 /* RELAX */
 #relaxBg {
   background-image: url(../../images/bg6.jpg);
@@ -189,10 +205,13 @@ a {
 #relaxBg .container .content {
   display: flex;
   align-content: center;
-  margin: 0 8rem;
   position: relative;
-  width: 100%;
-  height: 100%;
+}
+#fiveMinBg .cls-1 {
+  width: 100px;
+}
+#fiveMinBg .cls-1:nth-child(1) {
+  transform: rotate(-20deg);
 }
 
 .lineOne {
@@ -207,4 +226,87 @@ a {
   position: absolute;
   left: 0;
   stroke: orange;
+}
+
+path#Path_26 {
+  border: 1px solid red;
+  top: -10px;
+  /* transform:translateY(10px); */
+  /* animation: lava 1s infinite alternate; */
+}
+@keyframes lava {
+  0% {
+    fill: red;
+    /* transform:matrix(0.269, 0.88, -0.963, 0.252, 3029.422, -839.68); */
+  }
+  100% {
+    fill: blue;
+    /* transform:matrix(0.269, 100, -0.963, 0.252, 3029.422, -839.68);  */
+  }
+}
+
+#relaxBg .relaxIcon {
+  width: 400px;
+  top: 150px;
+}
+
+#first {
+  position: absolute;
+  transform: translateX(-150px) rotate(270deg) !important;
+  animation: 7s floatOne infinite alternate linear;
+}
+@keyframes floatOne {
+  0% {
+    transform: translateX(-150px) rotate(270deg);
+  }
+  100% {
+    transform: translateX(-10px) rotate(180deg);
+  }
+}
+
+#second {
+  position: absolute;
+  transform: translateX(160px) translateY(50px) !important;
+  animation: 7s floatTwo infinite alternate ease-in-out;
+
+  /* transform: rotate(90deg); */
+}
+@keyframes floatTwo {
+  0% {
+    transform: translateX(160px) translateY(50px);
+  }
+  100% {
+    transform: translateX(-10px) translateY(0px) rotate(60deg);
+  }
+}
+#third {
+  /* border: 1px solid orange; */
+
+  position: absolute;
+  transform: translateX(400px) translateY(-200px) rotate(270deg) !important;
+  animation: 7s floatThree infinite alternate ease-in-out;
+}
+@keyframes floatThree {
+  0% {
+    transform: translateX(400px) translateY(-200px) rotate(270deg);
+  }
+  100% {
+    transform: translateX(450px) translateY(100px) rotate(180deg);
+  }
+}
+
+#fourth {
+  /* border: 1px solid green; */
+  position: absolute;
+  transform: translateX(700px) translateY(100px) rotate(-10deg) !important;
+  animation: 7s floatFour infinite alternate ease-in-out;
+}
+
+@keyframes floatFour {
+  0% {
+    transform: translateX(700px) translateY(100px) rotate(-10deg);
+  }
+  100% {
+    transform: translateX(600px) translateY(-100px) rotate(30deg);
+  }
 }

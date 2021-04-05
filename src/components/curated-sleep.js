@@ -3,7 +3,6 @@ import Janina from "../../src/sounds/B_Curated/janina.mp3";
 import CuratedBar from "./curatedBar";
 import { Link } from "react-router-dom";
 
-
 export default function Sleep() {
   let audio = useRef();
   const [playing, setPlaying] = useState(true);
@@ -49,9 +48,9 @@ export default function Sleep() {
         </div>
       </div>
       <CuratedBar />
-      <div className="soundToggle">
-          <button onClick={toggle}>{playing ? "Pause" : "Play"}</button>
-        </div>
+      {/* <div className="soundToggle">
+        <button onClick={toggle}>{playing ? "Pause" : "Play"}</button>
+      </div> */}
     </section>
   );
 }

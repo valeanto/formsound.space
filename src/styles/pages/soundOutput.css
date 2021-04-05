@@ -1,20 +1,24 @@
 #soundOutputBg {
   background-image: url(../../images/bg7.jpg);
-  border: 1px solid black;
   overflow: hidden;
 }
 
 #soundOutputBg .container {
-  margin-top: 4rem;
+  /* margin: 4rem; */
   display: block;
+  height: 100%;
+  width: 100%;
 }
-
+#soundOutputBg  .header{
+    margin-left: 10rem;
+}
 #soundOutputBg .container h1 {
   color: white;
   font-size: 35px;
 }
 #soundOutputBg .container .output {
   height: 70%;
+  top:4rem;
   position: relative;
   display: flex;
   align-items: center;

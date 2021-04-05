@@ -4,19 +4,16 @@ import MouseOnTable from "../../src/sounds/B_Generator/mouseOnTable.mp3";
 
 function Randomize() {
   let randomizeAudio = new Audio(MouseOnTable);
-
   const playAudioRandomizer = () => {
     randomizeAudio.currentTime = 0;
     randomizeAudio.play();
   };
-
   useEffect(() => {
     return () => {
       randomizeAudio.pause();
       console.log("in cleanup");
     };
   }, []);
-
   return (
     <>
       <section id="randomizeBg">
@@ -27,7 +24,6 @@ function Randomize() {
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 117.54 170.91"
                 onClick={playAudioRandomizer}
-                
               >
                 <g id="Layer_2" data-name="Layer 2">
                   <g id="Ebene_1" data-name="Ebene 1">
@@ -42,7 +38,7 @@ function Randomize() {
             </div>
           </div>
         </div>
-        <Link to="/" className="options">
+        <Link to="/home" className="options">
           <h3 className="caps">Back</h3>
         </Link>
       </section>

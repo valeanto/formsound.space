@@ -3,13 +3,12 @@ import { Link } from "react-router-dom";
 
 export default function SoundOutput() {
   const handleKeyDown = (event) => {
-
-    if (event.key === 'Enter') {
+    if (event.key === "Enter") {
       event.preventDefault();
-      var userTitle=event.target.value;
+      var userTitle = event.target.value;
       console.log(userTitle);
     }
-  }
+  };
 
   return (
     <>
@@ -17,7 +16,7 @@ export default function SoundOutput() {
         <div className="container">
           <div className="header">
             <h1 className="">This is your sound</h1>
-            <h1 id="sound-selection">props</h1>
+            {/* <h1 id="sound-selection">props</h1> */}
           </div>
           <div className="output">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 155.63 153.24">
@@ -52,7 +51,9 @@ export default function SoundOutput() {
             {/* goes  */}
             <Link to="/dashboard">Save your sound</Link>
             {/* alert box or download sound */}
-            <a onClick={()=>alert("JK- You can't download it yet ;)")}>Download your sound</a>
+            <a onClick={() => alert("JK- You can't download it yet ;)")}>
+              Download your sound
+            </a>
           </div>
         </div>
       </section>

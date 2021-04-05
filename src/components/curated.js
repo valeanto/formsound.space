@@ -7,7 +7,7 @@ function Curated() {
         <div className="container">
           <div className="item" id="animOne">
             <div className="svg-container">
-              <Link to ="/five-min-pick-me-up">
+              <Link to="/five-min-pick-me-up">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 117.54 170.91"
@@ -27,32 +27,32 @@ function Curated() {
           </div>
           <div className="item" id="animThree">
             <div className="svg-container">
-            <Link to ="/relax">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 137.56 181.17"
-              >
-                <g id="Layer_2" data-name="Layer 2">
-                  <g id="Ebene_1" data-name="Ebene 1">
-                    <path
-                      className="cls-1"
-                      d="M137.23,83.29c.37,4.27-1,6.6-3.3,9.85s-5.85,7.22-10,13.33a160.61,160.61,0,0,0-13.55,24.91c-4.66,10-9,21.74-14.57,28.5-11.7,12.35-24.72,24.6-44.38,20.06-9.86-3.09-22.75-13-34-33.58C5.9,126.87-.45,96,.33,80.81c.65-21,5.26-25,12.2-33.68,7-7.66,17.35-19.1,28.95-28.65C53.52,8.53,65.24,1.9,74.69.6,84.23-.92,91.5,2.89,96.57,9c11,12.73,17.82,21.75,24.5,36.64,3.36,7.22,7.07,15.26,10.34,22S137,79.68,137.23,83.29Z"
-                    />
+              <Link to="/relax">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 137.56 181.17"
+                >
+                  <g id="Layer_2" data-name="Layer 2">
+                    <g id="Ebene_1" data-name="Ebene 1">
+                      <path
+                        className="cls-1"
+                        d="M137.23,83.29c.37,4.27-1,6.6-3.3,9.85s-5.85,7.22-10,13.33a160.61,160.61,0,0,0-13.55,24.91c-4.66,10-9,21.74-14.57,28.5-11.7,12.35-24.72,24.6-44.38,20.06-9.86-3.09-22.75-13-34-33.58C5.9,126.87-.45,96,.33,80.81c.65-21,5.26-25,12.2-33.68,7-7.66,17.35-19.1,28.95-28.65C53.52,8.53,65.24,1.9,74.69.6,84.23-.92,91.5,2.89,96.57,9c11,12.73,17.82,21.75,24.5,36.64,3.36,7.22,7.07,15.26,10.34,22S137,79.68,137.23,83.29Z"
+                      />
+                    </g>
                   </g>
-                </g>
-              </svg>
+                </svg>
               </Link>
               <h3 className="title">relax</h3>
             </div>
           </div>
-          <div className="item" id="curatedItem" >
+          <div className="item" id="curatedItem">
             <div className="svg-container">
-            <Link to ="/i-want-to-sleep">
+              <Link to="/i-want-to-sleep">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 128.87 179.49"
                 >
-                  <g id="Layer_2" data-name="Layer 2">
+                  <g id="Layer_2" data-name="Layer 2" >
                     <g id="Ebene_1" data-name="Ebene 1">
                       <path
                         className="cls-1"
@@ -60,12 +60,11 @@ function Curated() {
                       />
                     </g>
                   </g>
-             
                 </svg>
                 <h3 className="title" id="three">
                   i want to sleep
                 </h3>
-                </Link>
+              </Link>
             </div>
           </div>
         </div>

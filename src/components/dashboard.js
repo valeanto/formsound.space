@@ -1,5 +1,7 @@
 import React from "react";
-
+import VisualOne from "../components/visualOne"
+import VisualTwo from "../components/visualTwo"
+import VisualThree from "../components/visualThree"
 function Dashboard() {
   return (
     <section id="dashboardBg">
@@ -67,7 +69,7 @@ function Dashboard() {
                     </svg>
                   </div>
                 </div>
-                <div className="visual">visual</div>
+                <div className="visual"><VisualOne /></div>
                 <div className="share">
                   <div className="commands">
                     <div className="audio-svg-c">
@@ -146,7 +148,9 @@ function Dashboard() {
                     </svg>
                   </div>
                 </div>
-                <div className="visual">visual</div>
+                <div className="visual">
+                <VisualTwo />
+                </div>
                 <div className="share">
                   <div className="commands">
                     <div className="audio-svg-c">
@@ -225,7 +229,9 @@ function Dashboard() {
                     </svg>
                   </div>
                 </div>
-                <div className="visual">visual</div>
+                <div className="visual">
+                  <VisualThree />
+                </div>
                 <div className="share">
                   <div className="commands">
                     <div className="audio-svg-c">

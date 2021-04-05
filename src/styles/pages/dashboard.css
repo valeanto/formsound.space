@@ -35,6 +35,11 @@
   flex-direction: row;
   justify-content: space-between;
 }
+.visual {
+  width: 100%;
+  margin: 0 1rem;
+  /* border:1px solid white; */
+}
 #dashboardBg .container .content .col-sm {
   width: 30%;
 }
@@ -67,3 +72,5 @@
   max-height: 30px;
   padding: 0.1rem;
 }
+
+
