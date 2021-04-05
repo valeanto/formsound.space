@@ -36,10 +36,9 @@ function App() {
           <Route path="/five-min-pick-me-up" exact component={FiveMin} />
           <Route path="/relax" exact component={Relax} />
           <Route path="/i-want-to-sleep" exact component={Sleep} />
-
         </Switch>
-        <SoundToggle />
       </Router>
+      {/* <SoundToggle /> */}
     </>
   );
 }

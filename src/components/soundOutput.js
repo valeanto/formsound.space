@@ -52,7 +52,7 @@ export default function SoundOutput() {
             {/* goes  */}
             <Link to="/dashboard">Save your sound</Link>
             {/* alert box or download sound */}
-            <Link to="">Download your sound</Link>
+            <a onClick={()=>alert("JK- You can't download it yet ;)")}>Download your sound</a>
           </div>
         </div>
       </section>

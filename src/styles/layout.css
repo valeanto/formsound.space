@@ -35,13 +35,16 @@ body {
   fill: none;
   stroke: #ffffff;
   stroke-miterlimit: 10;
-  stroke-width: 3px;
+  stroke-width: 2px;
 }
 .cls-3 {
   fill: none;
   stroke: #ffffff;
   stroke-miterlimit: 10;
-  stroke-width: 1.5px;
+  stroke-width: 3px;
+}
+.login-button {
+  text-decoration: none;
 }
 section {
   padding: 1rem;
@@ -53,13 +56,64 @@ section {
   background-size: fill; /* Resize the background image to cover the entire container */
 }
 .settings {
+  position: relative;
   width: 150px;
+}
+.icon-con #generateNav {
+  transform: scale(1.1);
+}
+.nav-item-con {
   display: flex;
+  width: auto;
+}
+
+.hideMenu .nav-item-con {
+  position: absolute;
+  width: 30px;
+  right: 0;
+  height: 100%;
+  /* text-align:right; */
+}
+.hideMenu .nav-item-con .icon-con {
+  position: absolute;
+  right: 0;
+  /* text-align:right; */
+}
+
+/* .hideMenu .nav-item-con */
+.hideMenu {
+  width: 30px;
+  display: flex;
+
   flex-direction: column;
 }
 
+.hideMenu .login-button .buttonText {
+  display: none;
+}
+.hideMenu .login-button .icon-con {
+  width: 100%;
+  max-width: 20px;
+  outline: none;
+  right: 0;
+  position: absolute;
+}
+.hideMenu .login-button .icon-con svg:nth-child(1) {
+  left: 3rem;
+}
+.hideMenu .login-button .icon-con #navMembers {
+  right: 0rem;
+}
+.hideMenu .login-button .icon-con #navContact {
+  right: 4rem;
+}
+
+.showMenu .login-button .buttonText {
+  display: block;
+}
+
 .showMenu {
-  border: 2px solid green;
+  color: black;
 }
 #downloadBg {
   background-image: url(../images/bg5.jpg);

@@ -1,10 +1,29 @@
-import landingBg from "../images/bg2.jpg";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import React, { useRef, useEffect, useState } from "react";
+import { Link } from "react-router-dom";
+import WelcomeTextAudio from "../../src/sounds/B_HomeSound/welcomtext_01.mp3";
 
-function Landing() {
+function Landing(props) {
+  let audio = useRef();
+  const [playing, setPlaying] = useState(true);
+  const toggle = () => setPlaying(!playing);
+
+  useEffect(() => {
+    audio.current = new Audio(WelcomeTextAudio);
+    audio.current.play();
+  }, []);
+  useEffect(() => {
+    return () => {
+      audio.current.pause();
+      console.log("in cleanup");
+    };
+  }, []);
+
+  useEffect(() => {
+    playing ? audio.current.play() : audio.current.pause();
+  }, [playing]);
+
   return (
     <>
-      {/* <img src={landingBg} alt=""/> */}
       <section id="landingBg">
         <div className="container">
           <div className="item">
@@ -53,6 +72,9 @@ function Landing() {
               <h3 className="title">curated</h3>
             </Link>
           </div>
+        </div>
+        <div className="soundToggle">
+          <button onClick={toggle}>{playing ? "Pause" : "Play"}</button>
         </div>
       </section>
     </>

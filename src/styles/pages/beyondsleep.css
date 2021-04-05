@@ -35,8 +35,9 @@
   position: absolute;
   bottom: 0;
 }
-.options div {
+.options a {
   font-size: 14px;
+  text-decoration: none;
   font-family: BiancoSans;
   margin: 0 4rem;
   color: white;
@@ -76,7 +77,7 @@
   transition: fill 0.2s ease;
 }
 .bs-svg-container .cls-1:hover {
-  fill: black;
+  fill: rgba(0,0,0,0.5);
 }
 .bs-svg-container {
   width: 500px;
@@ -100,7 +101,7 @@
   z-index: 4;
 }
 .bs-svg-container .cls-1 {
-  fill: pink;
+  fill: #b69b92;
 }
 #bs-2 {
   z-index: 5;
