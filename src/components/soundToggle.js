@@ -1,6 +1,4 @@
-import React, { useState, useEffect } from "react";
-import audioLink from "../sounds/B_Curated/fluffy.mp3";
-import Fingernails from "../../src/sounds/B_Generator/fingernails.mp3";
+import React from "react";
 
 const SoundToggle = (e) => {
   return (

@@ -1,7 +1,9 @@
 import React, { useRef, useEffect, useState } from "react";
 import Janina from "../../src/sounds/B_Curated/janina.mp3";
-
 import CuratedBar from "./curatedBar";
+import { Link } from "react-router-dom";
+
+
 export default function Sleep() {
   let audio = useRef();
   const [playing, setPlaying] = useState(true);

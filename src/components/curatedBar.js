@@ -1,12 +1,13 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function CuratedBar() {
   return (
     <>
       <div className="curatedBar">
-        <div className="el">
+        <Link to='/' className="el">
           <h3 className="title"> Exit</h3>
-        </div>
+        </Link>
         <div className="el">
           <div className="svg-con">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 109.25 93.77">
@@ -35,9 +36,9 @@ function CuratedBar() {
             </svg>
           </div>
         </div>
-        <div className="el">
+        <Link to ='/curated' className="el">
           <h3 className="title"> Back</h3>
-        </div>
+        </Link>
       </div>
     </>
   );

@@ -39,6 +39,18 @@
   width: 16%;
   position: relative;
 }
+.generate-container .content .svg-container:hover {
+  animation: updown 1s infinite alternate ease;
+}
+@keyframes updown {
+  0% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(5px);
+  }
+}
+
 .generate-container .content .svg-container:hover .cls-1 {
   fill: rgba(0, 0, 0, 0.5);
 }
@@ -61,11 +73,11 @@
   bottom: 0.5rem;
   right: 5rem;
 }
+
 .generate-container .generateSoundButton .title {
   position: absolute;
   height: auto;
   top: 20%;
-
   text-transform: uppercase;
   font-size: 12px;
   font-family: BiancoSans;
