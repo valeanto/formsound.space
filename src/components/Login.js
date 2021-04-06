@@ -9,9 +9,9 @@ const clientId =
   "734109086152-t8s3b90afs2pp426et6mu98j254bjkvb.apps.googleusercontent.com";
 
 function Login() {
-  let history = useHistory();
-  const onSuccess = (res) => {
-    console.log("Login Success: currentUser:", res.profileObj);
+  // let history = useHistory();
+  // const onSuccess = (res) => {
+  //   console.log("Login Success: currentUser:", res.profileObj);
 
     // alert(
     //   `Logged in successfully welcome ${res.profileObj.name} 😍. \n See console for full profile object.`
@@ -20,22 +20,22 @@ function Login() {
     // refreshTokenSetup(res);
 
     //  history.push("/random");
-  };
+  // };
   const signInTemp = () => {
     alert("coming soon!");
   };
-  const onFailure = (res) => {
-    console.log("Login failed: res:", res);
-    alert(`Failed to login. 😢 `);
-  };
+  // const onFailure = (res) => {
+  //   console.log("Login failed: res:", res);
+  //   alert(`Failed to login. 😢 `);
+  // };
 
-  const { signIn } = useGoogleLogin({
-    onSuccess,
-    onFailure,
-    clientId,
-    isSignedIn: true,
-    accessType: "offline",
-  });
+  // const { signIn } = useGoogleLogin({
+  //   onSuccess,
+  //   onFailure,
+  //   clientId,
+  //   isSignedIn: true,
+  //   accessType: "offline",
+  // });
 
   return (
     <div className="nav-item-con" onClick={signInTemp}>
