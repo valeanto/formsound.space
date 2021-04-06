@@ -23,7 +23,7 @@ function Navbar() {
         className={`settings ${navbarOpen ? " showMenu" : "hideMenu"}`}
         onClick={handleToggle}
       >
-        <Login />
+        {/* <Login /> */}
         {/* <Logout /> */}
         {/* <Link to="/">login</Link> */}
         <div className="nav-item-con">
