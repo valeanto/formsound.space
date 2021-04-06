@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/formsound.space/static/css/main.4017e1c3.chunk.css",
-    "main.js": "/formsound.space/static/js/main.2092bb0e.chunk.js",
-    "main.js.map": "/formsound.space/static/js/main.2092bb0e.chunk.js.map",
+    "main.js": "/formsound.space/static/js/main.61dec5dd.chunk.js",
+    "main.js.map": "/formsound.space/static/js/main.61dec5dd.chunk.js.map",
     "runtime-main.js": "/formsound.space/static/js/runtime-main.9a5a570e.js",
     "runtime-main.js.map": "/formsound.space/static/js/runtime-main.9a5a570e.js.map",
-    "static/js/2.14226a4b.chunk.js": "/formsound.space/static/js/2.14226a4b.chunk.js",
-    "static/js/2.14226a4b.chunk.js.map": "/formsound.space/static/js/2.14226a4b.chunk.js.map",
+    "static/js/2.288b114d.chunk.js": "/formsound.space/static/js/2.288b114d.chunk.js",
+    "static/js/2.288b114d.chunk.js.map": "/formsound.space/static/js/2.288b114d.chunk.js.map",
     "static/js/3.7be7fe75.chunk.js": "/formsound.space/static/js/3.7be7fe75.chunk.js",
     "static/js/3.7be7fe75.chunk.js.map": "/formsound.space/static/js/3.7be7fe75.chunk.js.map",
     "index.html": "/formsound.space/index.html",
     "static/css/main.4017e1c3.chunk.css.map": "/formsound.space/static/css/main.4017e1c3.chunk.css.map",
-    "static/js/2.14226a4b.chunk.js.LICENSE.txt": "/formsound.space/static/js/2.14226a4b.chunk.js.LICENSE.txt",
+    "static/js/2.288b114d.chunk.js.LICENSE.txt": "/formsound.space/static/js/2.288b114d.chunk.js.LICENSE.txt",
     "static/media/App.css": "/formsound.space/static/media/bg7.e755ea2e.jpg",
     "static/media/breathing.6eba278a.mp3": "/formsound.space/static/media/breathing.6eba278a.mp3",
     "static/media/buzzing.de5f54d5.mp3": "/formsound.space/static/media/buzzing.de5f54d5.mp3",
@@ -40,8 +40,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.9a5a570e.js",
-    "static/js/2.14226a4b.chunk.js",
+    "static/js/2.288b114d.chunk.js",
     "static/css/main.4017e1c3.chunk.css",
-    "static/js/main.2092bb0e.chunk.js"
+    "static/js/main.61dec5dd.chunk.js"
   ]
 }
