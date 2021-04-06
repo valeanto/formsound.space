@@ -99,3 +99,14 @@ textarea::placeholder {
 .visual div svg {
   width: 100%;
 }
+
+
+.imp_links{
+  margin-top:2rem;
+}
+.imp_links a{
+  margin:0 1rem;
+}
+#demo{
+  margin-top:1rem;
+}

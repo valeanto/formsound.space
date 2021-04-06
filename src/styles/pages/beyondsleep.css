@@ -8,9 +8,18 @@
   height: 100%;
   position: relative;
   /* z-index:1; */
+  font-family: BiancoSans;
 }
-.options{
+.options {
   z-index: 5;
+}
+#noIdea {
+  margin-left: 30px;
+  margin-bottom: 50px;
+  font-size:12px;
+}
+#noIdea .caps{
+  font-size:14px;
 }
 .beyondsleep:hover #bs-1 {
   transform: translateX(-20%);
@@ -82,7 +91,7 @@
   transition: fill 0.2s ease;
 }
 .bs-svg-container .cls-1:hover {
-  fill: rgba(0,0,0,0.5);
+  fill: rgba(0, 0, 0, 0.5);
 }
 .bs-svg-container {
   width: 500px;

@@ -11,20 +11,25 @@ export default function membersPlace() {
               <Link to="/">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 117.54 170.91"
+                  width="445.001"
+                  height="710.107"
+                  viewBox="0 0 445.001 710.107"
                 >
-                  <g id="Layer_2" data-name="Layer 2">
-                    <g id="Ebene_1" data-name="Ebene 1">
-                      <path
-                        className="cls-1"
-                        d="M105.74,142.59c-17,29.69-42.85,36.24-70.25,17.35a54,54,0,0,1-6-4.51C3.6,132.27,6,117.23,1.43,98.23c-4.22-17.09,4.23-31.94,15.3-53.8C22.63,33.8,28.87,21.86,37.36,11,44.48,1.78,54.24-2.63,66.61,2.49A73.18,73.18,0,0,1,86,14.8C99.25,26,111.15,48,115.31,72.67,119.74,97.22,116.43,124.54,105.74,142.59Z"
-                      />
-                    </g>
-                  </g>
+                  <path
+                    className="cls-1"
+                    id="Path_20"
+                    data-name="Path 20"
+                    d="M691.822,2464.187c-61.258,106.885-154.283,130.438-252.915,62.462a192.219,192.219,0,0,1-21.48-16.268c-93.335-83.351-84.8-137.506-101.148-205.924-15.175-61.524,15.241-114.976,55.1-193.682,21.236-38.269,43.692-81.235,74.269-120.5,25.641-33.031,60.77-48.9,105.3-30.49,21.168,8.824,45.319,23.082,69.891,44.33,47.594,40.353,90.443,119.367,105.4,208.345C742.219,2300.84,730.308,2399.178,691.822,2464.187Z"
+                    transform="matrix(-0.831, 0.117, -0.139, -0.99, 1003.004, 2501.831)"
+                    fill="rgba(0,0,0,0)"
+                    stroke="#fff"
+                    stroke-miterlimit="10"
+                    stroke-width="1"
+                  />
                 </svg>
               </Link>
-              <div className="bs-title">
-                <p>No Idea</p>
+              <div className="bs-title" id="noIdea">
+                <p className="caps">No Idea</p>
                 <p>by Xiomat_21</p>
               </div>
             </div>
@@ -44,7 +49,7 @@ export default function membersPlace() {
                 </svg>
               </Link>
               <div className="bs-title">
-                <p>beyond sleep</p>
+                <p className="caps">beyond sleep</p>
                 <p>by Luna</p>
               </div>
             </div>
@@ -65,7 +70,7 @@ export default function membersPlace() {
                 </g>
               </svg>
               <div className="bs-title">
-                <p>beyond sleep</p>
+                <p className="caps">beyond sleep</p>
                 <p>by Luna</p>
               </div>
             </div>
@@ -86,8 +91,8 @@ export default function membersPlace() {
                 </g>
               </svg>
               <div className="bs-title">
-                <p>Curiosity Maker</p>
-                <p>by mena</p>
+                <p className="caps">Curiosity Maker</p>
+                <p>by Mena</p>
               </div>
             </div>
           </div>
@@ -105,17 +110,17 @@ export default function membersPlace() {
                     />
                   </g>
                 </g>
-                <div className="bs-title">
-                  <p>Curiosity Maker</p>
-                  <p>by mena</p>
-                </div>
               </svg>
+              <div className="bs-title" id='curiosity'>
+                <p className="caps" >Curiosity Maker</p>
+                <p>by Luna</p>
+              </div>
             </div>
           </div>
         </div>
         <div className="options">
           <Link to="/home">EXIT</Link>
-          <Link to="/home">UPLOAD</Link>
+          <Link to="/dashboard">UPLOAD</Link>
         </div>
       </section>
     </>
