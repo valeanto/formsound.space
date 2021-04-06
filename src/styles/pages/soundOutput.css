@@ -9,8 +9,8 @@
   height: 100%;
   width: 100%;
 }
-#soundOutputBg  .header{
-    margin-left: 10rem;
+#soundOutputBg .header {
+  margin-left: 10rem;
 }
 #soundOutputBg .container h1 {
   color: white;
@@ -18,17 +18,26 @@
 }
 #soundOutputBg .container .output {
   height: 70%;
-  top:4rem;
+  top: 4rem;
   position: relative;
   display: flex;
   align-items: center;
 }
 #soundOutputBg .container .output svg {
+  animation: updownOutput 1s infinite alternate ease;
   height: 100%;
   position: absolute;
   left: 50%;
   top: 0%;
   transform: translateX(-50%);
+}
+@keyframes updownOutput{
+  0%{
+    transform: translateX(-50%) translateY(-5px);
+  }
+  100%{
+    transform: translateX(-50%) translateY(5px);
+  }
 }
 #soundOutputBg .container .output input {
   position: absolute;
@@ -59,9 +68,8 @@
 
 #soundOutputBg .container .output input[type="text"] {
   font-size: 30px;
-  color:white;
+  color: white;
   font-family: BiancoSerif;
-
 }
 
 #soundOutputBg .container .options {

@@ -1,11 +1,16 @@
 #beyondSleep {
   background-image: url(../../images/bg.jpg);
   overflow: hidden;
+  /* z-index:-6; */
 }
 
 .beyondsleep {
   height: 100%;
   position: relative;
+  /* z-index:1; */
+}
+.options{
+  z-index: 5;
 }
 .beyondsleep:hover #bs-1 {
   transform: translateX(-20%);

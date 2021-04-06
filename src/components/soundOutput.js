@@ -16,7 +16,7 @@ export default function SoundOutput() {
         <div className="container">
           <div className="header">
             <h1 className="">This is your sound</h1>
-            {/* <h1 id="sound-selection">props</h1> */}
+            <h1 id="demo">props</h1>
           </div>
           <div className="output">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 155.63 153.24">

@@ -20,10 +20,12 @@ body {
   z-index: 1;
   width: 100%;
   padding: 1rem;
+  z-index:5;
 }
 
 .logo {
   width: 70px;
+ 
 }
 
 .cls-1 {
@@ -164,6 +166,10 @@ section {
 
 #random {
   animation: random 3s infinite alternate ease;
+}
+#updown{
+  animation: generate 1s infinite alternate ease ;
+
 }
 #generate {
   animation: generate 1s infinite alternate ease 0.2s;

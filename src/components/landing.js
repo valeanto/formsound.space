@@ -32,7 +32,7 @@ function Landing(props) {
           </Link>
           <div className="item">
             <Link to="/randomize" className="svg-container">
-              <svg viewBox="0 0 115.87 141.24" id="random">
+              <svg viewBox="0 0 115.87 141.24" id="updown">
                 <g id="Layer_2" data-name="Layer 2">
                   <g id="Ebene_1" data-name="Ebene 1">
                     <path

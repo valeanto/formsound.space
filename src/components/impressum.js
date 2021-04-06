@@ -11,7 +11,7 @@ export default function Impressum() {
         </p>
         <div className="contentContainer">
           <div className="impressumContainer">
-            <h2>Impressum</h2>
+            <h2>w</h2>
             <p>Walesca Frank Stromstrasse 49 10551 berlin</p>
             <p>
               Telefon: 004915125756084

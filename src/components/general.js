@@ -21,6 +21,7 @@ import StickyNotes from "../../src/sounds/B_Generator/stickyNotes.mp3";
 import SoundToggle from "../components/soundToggle";
 
 function General() {
+  let word;
   const [fill, setFill] = useState(false);
   const fillPath = () => {
     setFill(!fill);
@@ -71,7 +72,13 @@ function General() {
         </div>
         <div className="generate-container">
           <div className="content">
-            <div id="relax" className="svg-container">
+            <div
+              id="relax"
+              className="svg-container"
+              onClick={(event) => {
+                console.log(event.target.innerHTML);
+              }}
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 151.45 167.37"
@@ -442,7 +449,14 @@ function General() {
               </svg>
               <h3 className="title">tapping</h3>
             </div>
-            <div id="stickyNotes" className="svg-container">
+            <div
+              id="stickyNotes"
+              className="svg-container"
+              onClick={(event) => {
+                let word = event.target.querySelector(".title");
+                console.log(word);
+              }}
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 129.84 118.59"

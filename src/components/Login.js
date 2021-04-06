@@ -21,7 +21,9 @@ function Login() {
 
     //  history.push("/random");
   };
-
+  const signInTemp = () => {
+    alert("coming soon!");
+  };
   const onFailure = (res) => {
     console.log("Login failed: res:", res);
     alert(`Failed to login. 😢 `);
@@ -36,8 +38,9 @@ function Login() {
   });
 
   return (
-    <div className="nav-item-con">
-      <div className="login-button" onClick={signIn}>
+    <div className="nav-item-con" onClick={signInTemp}>
+      {/* <div className="login-button" onClick={signIn}> */}
+      <div className="login-button">
         <h3 className="buttonText">Login</h3>
       </div>
       <div className="icon-con">
